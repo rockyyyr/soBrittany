@@ -1,0 +1,150 @@
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.drop-down-buttons {
+    position: relative;
+    z-index: 0;
+    top: 50px;
+    display: none;
+}
+
+.drop-down-button {
+    position: relative;
+    z-index: 0;
+    background-color: rgba(248, 248, 248, 0.8);
+    border-top: 1px solid #f2f2f2;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+}
+
+.drop-down-button:hover {
+    background-color: rgba(248, 248, 248, 0.9);
+}
+
+.header-toggle {
+    width: 40px;
+    display: none;
+}
+
+.header {
+    background-color: rgba(248, 248, 248, 0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    z-index: 5000;
+    padding: 0;
+}
+
+.header-button {
+    top: -10px;
+    height: 80px;
+    position: relative;
+    line-height: 80px;
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: 100;
+    color: black;
+    display: inline-block;
+    width: 150px;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    /*text-shadow: 2px 2px black;*/
+}
+
+.header-button:hover {
+    background-color: #f4f4f4;
+    border: 1px solid #f2f2f2;
+}
+
+.content {
+    width: 95%;
+    margin: 80px auto;
+}
+
+.background {
+    /*background-color: black;*/
+}
+
+.card {
+    padding: 2px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 500;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.fade:hover{
+    animation: fade-to-black 1s ease forwards;
+}
+
+
+@keyframes fade-to-black {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 806px) and (max-width: 965px){
+
+    .header-button{
+        width: 120px;
+    }
+
+}
+
+@media (min-width: 676px) and (max-width: 805px){
+
+    .header-button{
+        width: 80px;
+    }
+
+}
+
+
+@media (max-width: 675px){
+
+    .content {
+        margin: 50px auto;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .logo {
+        position:absolute;
+        z-index: 5000;
+        top: 3px;
+        left: 15px;
+        height: 60px;
+    }
+
+    .header-toggle {
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+}
+
+
+
